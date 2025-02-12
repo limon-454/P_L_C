@@ -11,17 +11,31 @@
     <!-- Navbar -->
     <nav>
         <h1>MySocial</h1>
-        <input type="text" id="search" placeholder="Search...">
         <button id="loginBtn">Login</button>
     </nav>
 
+    <!-- Profile Section -->
+    <div id="profile-section" class="hidden">
+        <input type="file" id="profile-pic" />
+        <button id="uploadPicBtn">Upload Picture</button>
+    </div>
+
+    <!-- Post Section -->
+    <div id="post-section">
+        <textarea id="post-input" placeholder="What's on your mind?"></textarea>
+        <button id="postBtn">Post</button>
+    </div>
+
+    <!-- Feed Section -->
+    <div id="feed-section">
+        <div id="posts-container"></div>
+    </div>
+
     <!-- Chat Section -->
-    <div class="container" id="container">
-        <div class="chat-section" id="chat-section">
-            <div id="messages-container"></div>
-            <input type="text" id="message-input" placeholder="Type a message...">
-            <button id="sendBtn">Send</button>
-        </div>
+    <div id="chat-section">
+        <div id="messages-container"></div>
+        <input type="text" id="message-input" placeholder="Type a message..."/>
+        <button id="sendBtn">Send</button>
     </div>
 
     <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
