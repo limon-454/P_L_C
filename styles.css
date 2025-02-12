@@ -1,3 +1,4 @@
+/* Basic Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -21,69 +22,38 @@ nav input {
     border: none;
 }
 
-/* Container */
-.container {
-    width: 50%;
-    margin: auto;
-    margin-top: 20px;
-}
-
-/* Post Box */
-.post-box {
+/* Chat Section */
+.chat-section {
     background: white;
-    padding: 15px;
+    padding: 20px;
+    margin-top: 20px;
     border-radius: 10px;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    width: 60%;
+    margin: auto;
 }
 
-.post-box img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    margin-right: 10px;
-}
-
-.post-box input {
-    flex: 1;
-    padding: 8px;
-    border-radius: 5px;
+#messages-container {
+    height: 300px;
+    overflow-y: auto;
+    margin-bottom: 10px;
     border: 1px solid #ccc;
+    padding: 10px;
 }
 
-.post-box button {
+#message-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 80%;
+}
+
+#sendBtn {
     background: #1877f2;
     color: white;
     border: none;
-    padding: 8px 15px;
+    padding: 10px 15px;
     border-radius: 5px;
     cursor: pointer;
-}
-
-/* Post */
-.post {
-    background: white;
-    padding: 15px;
-    margin-top: 15px;
-    border-radius: 10px;
-    display: flex;
-}
-
-.post img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    margin-right: 10px;
-}
-
-.post-content h3 {
-    margin: 0;
-}
-
-.post-actions button {
-    background: none;
-    border: none;
-    color: #1877f2;
-    cursor: pointer;
-    margin-top: 5px;
 }
