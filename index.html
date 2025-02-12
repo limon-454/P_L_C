@@ -8,8 +8,27 @@
 </head>
 <body>
 
-    <!-- Navigation Bar -->
+    <!-- Navbar -->
     <nav>
         <h1>MySocial</h1>
-        <input type="text" placeholder="Search...">
-        <button>Login
+        <input type="text" id="search" placeholder="Search...">
+        <button id="loginBtn">Login</button>
+    </nav>
+
+    <!-- Chat Section -->
+    <div class="container" id="container">
+        <div class="chat-section" id="chat-section">
+            <div id="messages-container"></div>
+            <input type="text" id="message-input" placeholder="Type a message...">
+            <button id="sendBtn">Send</button>
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js"></script>
+    <script src="firebase.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
