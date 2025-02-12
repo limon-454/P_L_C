@@ -16,44 +16,57 @@ nav {
     align-items: center;
 }
 
-nav input {
-    padding: 5px;
-    border-radius: 5px;
-    border: none;
+/* Profile Section */
+#profile-section {
+    margin: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Post Section */
+#post-section textarea {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* Feed Section */
+#feed-section {
+    margin: 20px;
+}
+
+.post {
+    background: white;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+}
+
+.comment-section {
+    padding: 10px;
+    background-color: #f9f9f9;
+    margin-top: 10px;
 }
 
 /* Chat Section */
-.chat-section {
-    background: white;
-    padding: 20px;
+#chat-section {
     margin-top: 20px;
+    padding: 10px;
+    background: #fff;
     border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    width: 60%;
-    margin: auto;
 }
 
 #messages-container {
     height: 300px;
     overflow-y: auto;
-    margin-bottom: 10px;
     border: 1px solid #ccc;
-    padding: 10px;
+    margin-bottom: 10px;
 }
 
 #message-input {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
     width: 80%;
-}
-
-#sendBtn {
-    background: #1877f2;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
+    padding: 10px;
+    margin-right: 10px;
 }
