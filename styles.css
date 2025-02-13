@@ -1,72 +1,38 @@
-/* Basic Styles */
 body {
     font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
     margin: 0;
     padding: 0;
-    background: #f0f2f5;
 }
 
-/* Navbar */
-nav {
-    background: #1877f2;
+header {
+    background-color: #007bff;
     color: white;
-    padding: 10px 20px;
+    padding: 20px;
+}
+
+#searchBox {
+    width: 80%;
+    padding: 10px;
+    margin: 20px auto;
+    display: block;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#districts {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-/* Profile Section */
-#profile-section {
-    margin: 20px;
-}
-
-.hidden {
-    display: none;
-}
-
-/* Post Section */
-#post-section textarea {
-    width: 80%;
+    flex-wrap: wrap;
+    justify-content: center;
     padding: 10px;
-    margin-bottom: 10px;
 }
 
-/* Feed Section */
-#feed-section {
-    margin: 20px;
-}
-
-.post {
+.card {
     background: white;
-    padding: 10px;
-    margin: 10px 0;
-    border-radius: 10px;
-}
-
-.comment-section {
-    padding: 10px;
-    background-color: #f9f9f9;
-    margin-top: 10px;
-}
-
-/* Chat Section */
-#chat-section {
-    margin-top: 20px;
-    padding: 10px;
-    background: #fff;
-    border-radius: 10px;
-}
-
-#messages-container {
-    height: 300px;
-    overflow-y: auto;
-    border: 1px solid #ccc;
-    margin-bottom: 10px;
-}
-
-#message-input {
-    width: 80%;
-    padding: 10px;
-    margin-right: 10px;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 250px;
 }
